@@ -1,28 +1,25 @@
 .metadata__list {
+  label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.15cm;
+  }
 
-	label {
-		display: block;
-		font-weight: 700;
-		margin-bottom: .15cm;
-	}
+  > li {
+    &:not(:last-child) {
+      margin-bottom: 0.5cm;
+    }
+  }
 
-	> li {
-		&:not(:last-child) {
-			margin-bottom: .5cm;
-		}
-	}
+  input[type="text"],
+  input[type="date"] {
+    min-height: 0.5cm;
 
-	input[type="text"],
-	input[type="date"] {
-		min-height: .5cm;
-		
-		font-size: 9pt;
+    font-size: 9pt;
 
-		
-		border-left: 2pt solid black;
-		border-bottom: 2px solid black;
+    border-left: 2pt solid black;
+    border-bottom: 2px solid black;
 
-		padding: 0 .1cm .1cm .1cm;
-	}
-
+    padding: 0 0.1cm 0.1cm 0.1cm;
+  }
 }

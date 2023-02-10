@@ -1,15 +1,14 @@
 /** This stylesheet is meant to be printed out, hence the pt and cm units **/
 
-@import 'base/reset';
-@import 'base/fonts';
-@import 'base/generic';
-@import 'base/form';
-@import 'base/text';
+@import "base/reset";
+@import "base/fonts";
+@import "base/generic";
+@import "base/form";
+@import "base/text";
 
-@import 'layout/header';
-@import 'layout/content';
-@import 'layout/footer';
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
 
-@import 'partials/services';
-@import 'partials/metadata';
-
+@import "partials/services";
+@import "partials/metadata";

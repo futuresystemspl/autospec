@@ -1,15 +1,15 @@
 header {
-    margin-bottom: .5cm;
+  margin-bottom: 0.5cm;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header__logo {
-	display: grid;
-	justify-content: end;
-	img {
-		width: auto;
-		height: 1.25cm;
-	}
+  display: grid;
+  justify-content: end;
+  img {
+    width: auto;
+    height: 1.25cm;
+  }
 }

@@ -1,16 +1,16 @@
 .services__list {
-	> li {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex-shrink: none;
+  > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: none;
 
-		label {
-			cursor: pointer;
-		}
+    label {
+      cursor: pointer;
+    }
 
-		&:not(:last-child) {
-			margin-bottom: .15cm;
-		}
-	}
+    &:not(:last-child) {
+      margin-bottom: 0.15cm;
+    }
+  }
 }
