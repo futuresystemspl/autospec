@@ -1,0 +1,16 @@
+{
+  "name": "autospec",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/_scss:dist/assets/css --no-charset",
+    "build": "sass src/_scss:dist/assets/css --style compressed --no-charset"
+  },
+  "author": "futuresystems.pl",
+  "homepage": "https://futuresystems.pl",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}

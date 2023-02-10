@@ -1,0 +1,84 @@
+label {
+    font-size: 10pt;
+    font-weight: 500;    
+}
+
+input {
+    width: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+
+    position: relative;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 0;
+    border-radius: 0;
+
+}
+
+//hide calendar icon from date input and make it span across all input
+input[type="date"] {
+    
+    &::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+
+}
+
+
+input[type="checkbox"] {
+    width: .5cm;
+    height: .5cm;
+    cursor: pointer;
+
+    //custom style
+    border: 1pt solid silver;
+
+    &:checked {
+        background-color: black;
+        border-color: black;
+
+        
+
+        //dist/assets/svg/ico-check.svg converted to base64
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMyNy40IDI2NS4xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMjcuNCAyNjUuMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTU2LjYsODkuNkwwLDE0Ni4ybDExOC44LDExOC44TDMyNy40LDU2LjZMMjcwLjgsMGwtMTUyLDE1Mkw1Ni42LDg5LjZ6IiBmaWxsPSIjZmZmIi8+DQo8L3N2Zz4NCg==");
+        background-repeat: no-repeat;
+        background-size: 75% 75%; 
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        //background image might not get printed by default so let's create alternative checkmark with pure css...
+
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     position: relative;
+        //     width: 1mm;
+        //     height: 2.5mm;
+        //     border: solid white;
+        //     border-width: 0 1mm 1mm 0;
+        //     transform: rotate(45deg);
+        //     top: -.25mm;
+        // }
+
+        //... and it turned out that pseudoelement's are treated just as background images?
+
+    }
+
+}

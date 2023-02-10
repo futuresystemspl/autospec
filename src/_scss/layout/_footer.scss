@@ -1,0 +1,38 @@
+.footer__address {
+
+    text-align: center;
+    margin: .25cm 0;
+    p {
+        font-size: 10pt;
+        line-height: 1.25;
+    }
+}
+.footer__barcode {
+	img {
+		width: auto;
+		max-height: 1cm;
+		vertical-align: bottom;
+	}
+}
+.footer__layout {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: .375cm;
+}
+.footer__social {
+	font-size: 8pt;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    .ico {
+        margin-right: .15cm;
+        img {
+            width: .5cm;
+            height: .5cm;
+        }
+    }
+}

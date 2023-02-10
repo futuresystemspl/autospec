@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+   <meta charset="utf-8">
+   <title>Auto Spec Etykieta Przeglądowa</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="assets/css/global.css">
+   <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+
+</head>
+
+<body>
+
+   <main class="main__block">
+
+      <header class="block__header">
+         <h1>Etykieta przeglądowa</h1>
+         <figure class="header__logo">
+            <img src="assets/svg/logo.svg" />
+         </figure>
+      </header>
+
+      <h2 class="block__title">Wykonaliśmy przegląd w państwa samochodzie</h2>
+      <h3 class="block__subtitle">Wykonane operacje/wymienione części:</h3>
+
+      <section class="block__layout">
+
+         <aside class="layout__side">
+
+            <ul class="metadata__list">
+               <li class="list__item">
+                  <label for="date">Data:</label>
+                  <input id="date" type="date">
+               </li>
+               <li class="list__item">
+                  <label for="date">Przebieg:</label>
+                  <input id="date" type="text">
+               </li>
+               <li class="list__item">
+                  <label for="date">Rodzaj oleju:</label>
+                  <input id="date" type="text">
+               </li>
+            </ul>
+
+         </aside>
+
+         <div class="layout__main">
+            <ul class="services__list">
+               <li class="list__item item--service">
+                  <label for="service_1">Olej/filtr oleju</label>
+                  <input id="service_1" name="service_1" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_2">Filtr przeciwpyłkowy</label>
+                  <input id="service_2" name="service_2" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_3">Filtr paliwa</label>
+                  <input id="service_3" name="service_3" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_4">Filtr powietrza</label>
+                  <input id="service_4" name="service_4" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_5">Świece zapłonowe</label>
+                  <input id="service_5" name="service_5" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_6">Pasek rozrządu</label>
+                  <input id="service_6" name="service_6" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_7">Pasek napędu osprzętu</label>
+                  <input id="service_7" name="service_7" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_8">Płyn hamulcowy</label>
+                  <input id="service_8" name="service_8" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_9">Płyn chłodzący</label>
+                  <input id="service_9" name="service_9" type="checkbox">
+               </li>
+               <li class="list__item item--service">
+                  <label for="service_10">Kontrola klimatyzacji</label>
+                  <input id="service_10" name="service_10" type="checkbox">
+               </li>
+            </ul>
+         </div>
+
+      </section>
+
+      <section class="block__next">
+         <p class="block__title">Kolejny przegląd należy wykonać przed:</p>
+
+         <div class="block__layout">
+            <div>
+               <span class="label label--prefix">data</span>
+               <input type="date">
+            </div>
+            <div>
+               lub
+            </div>
+            <div>
+               <input type="text">
+               <span class="label label--suffix">km</span>
+            </div>
+
+         </div>
+
+      </section>
+
+      <footer class="block__footer">
+         <address class="footer__address">
+            <p>Auto Spec Warsztat Samochodowy, Irządze 27</p>
+            <p>Zadzwoń: <strong>663 241 652</strong> lub <strong>784 919 723</strong></p>
+         </address>
+
+         <section class="footer__layout">
+            <figure class="footer__barcode">
+               <img src="assets/img/barcode.png" />
+            </figure>
+            <ul class="footer__social">
+               <li>
+                  <figure class="ico">
+                     <img src="assets/svg/facebook.svg" />
+                  </figure>
+                  <span class="label">fb.com/autospec.irzadze</span>
+               </li>
+            </ul>
+         </section>
+
+      </footer>
+
+   </main><!-- main__block -->
+
+</body>
+
+</html>
